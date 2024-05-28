@@ -34,7 +34,7 @@ public class StudentController {
         return studentService.addMultipleStudents(studentsList);
     }
 
-    @PutMapping("/student/{studentId}")
+    @PutMapping("/students/{studentId}")
     public Student updateStudent(@PathVariable("studentId") int studentId, @RequestBody Student student) {
         return studentService.updateStudent(studentId, student);
     }
